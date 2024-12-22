@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+        .Form{
+            background-color:skyblue;
+            height:430px;
+            width:510px;
+            align-items: center;
+            border-radius: 5px;
+            margin-left:500px;
+            margin-top:-450px;
+        }
+        label{
+            width:100px;
+            display:inline-block;
+            padding-left:100px;
+            padding-top: 6px;
+            
+        }
+        
+        .bt1{
+            padding-left:200px;
+        }
+        .error{
+            color:red;
+            margin:0px;
+            text-align:left;
+            padding-left:200px;
+
+        }
+        
+        
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="title">
+        <h1 style="text-align:center">B.V. RAJU INSTITUTE OF TECHNOLOGY</h1>
+        <h2 style="text-align:center">Department of Information Technology</h2>
+     <img src="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\bvritlogo.jpg" width="150px" height="100px">
+        
+    </div>
+    <div class="links">
+        
+        <ul>
+        <li><a href=" " target="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html">IT Sections</a></li>
+        <div class="dropdown">
+        <ul>
+            <li><a href=" " >IT-A</a></li>
+            <li><a href=" " >IT-B</a></li>
+            <li><a href=" " >IT-C</a></li>
+        </ul>
+        <li><a href="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html" >Home</a></li>
+        <li><a href="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\3reg.html" target="_blank">Registration</a></li>
+        <li><a href=" " target="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html">Faculty</a></li>
+        <li><a href=" " target="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html">Syllabus</a></li>
+        <li><a href=" " target="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html">Examination</a></li>
+        <li><a href=" " target="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html">Library Books</a></li>
+        <li><a href=" " target="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html">Question Papers</a></li>
+        <li><a href=" " target="C:\Users\kethavath Pragna\OneDrive\Attachments\Documents\IMPORTANT FILES\IIITDM_Internship and Oasis Internship\BVRIT Page\index.html">HT Download</a></li>
+
+        </ul>
+    
+</div>
+    
+    <div class="Form">
+        <h1 style="text-align:center">Registration form</h1><br>
+        
+
+        <form action="C:\webapplication minor project\WEBAPPLICATION\podcast-1.html " 
+        onsubmit= "return validate();" >
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter your First Name" id="fn"> <br>
+            
+            <label>Middle Name:</label>
+            <input type="text" placeholder="Enter your Middle Name"><br> 
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter your Last Name" id="ln" ><br>
+            <label>Phone:</label>
+            <input type="text" placeholder="+91" id="ph"><br>  
+            <label>Email Id:</label>
+            <input type="text" placeholder="abc@" id="mail"><br> 
+            <p id="ErrorOccured" class="error"></p>
+            <label>Password</label>
+            <input type="Password" id="pwd"><br>
+            <label>Confirm Password</label>
+            <input type="Password" id="cpwd" ><br>
+            <p id="passwordError" class="error"></p>
+            <label>Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female <br>
+            <label>DOB:</label>
+            <input type="date" ><br>
+            <label>Skills:</label>
+            <input type="checkbox" >HTML
+            <input type="checkbox" >CSS
+            <input type="checkbox" >JavaScript
+            <input type="checkbox" >Java<br>
+            <label>Qalification:</label>
+            <select>
+                <option>select Option</option>
+                <option>Inter</option>
+                <option>Diploma</option>
+                <option>Btech</option>
+                <option>Mtech</option>
+            </select>
+        <br><br><br>
+        <div class="bt1">
+            <input type="submit" value="submit">
+        
+            
+            </div>
+            </div>
+</form>
+    
+
+
+
+
+
+<script>
+    function validate(){
+            let fn=document.getElementById("fn").value;
+            let ln=document.getElementById("ln").value;
+            let ph=document.getElementById("ph").value;
+            let mail=document.getElementById("mail").value;
+            let pwd=document.getElementById("pwd").value;
+            let cpwd=document.getElementById("cpwd").value;
+        
+        
+      if (fn==""|| ln==""||ph==""||pwd==""||cpwd==""){
+        alert("No field should be empty!!");
+        return false;
+       }
+       else if (ph.length<10||ph.length>10)
+       {
+        alert("Phone number should be of 10 digits");
+        return false;
+        }
+        else if(isNaN(ph)){
+            alert("Only numbers are preferred in phone number");
+            return false;
+        }
+        else if(cpwd.length< 5){
+            document.getElementById("passwordError").innerHTML="Password must be greater than 5";
+         return false;
+        }
+
+        else if(pwd!=cpwd){
+            alert("Passwords Mismatched! Check it");
+            return false;
+        }
+        else if(mail==""){
+            document.getElementById("ErrorOccured").innerHTML="Mail is empty";
+        }
+
+        else{
+         return true;
+        }
+    }
+    </script>
+</body>
+</html>

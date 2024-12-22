@@ -1,0 +1,51 @@
+*{
+    margin:0px;
+    font-style:Arial;
+   
+}
+
+.title{
+    height:100px;
+    align-items: center;
+    font-size:large;
+    background-color: orange;
+    color:green;
+    }
+.title img{
+    display:flex;
+    justify-content:center;
+    float:left;
+    margin-top:-73px;
+    background-color:orange ;
+    mix-blend-mode:multiply;
+    
+}
+ .links {
+    width:200px;
+    height:512px;
+    background-color: rgb(235, 135, 197);
+
+    
+}
+.links a{
+    color:rgb(0, 30, 255); 
+    font-size:large;  
+}
+ul li{
+    padding-top:20px;
+}
+.bvritimage{
+    display:flex;
+    float:right;
+    justify-content:center;
+    align-items:center;
+    margin-top:-470px;
+    margin-right:150px;
+    
+
+    
+}
+
+
+
+
